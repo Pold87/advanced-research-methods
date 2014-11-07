@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Goals}{3}{subsection.1.1}
+\contentsline {section}{\numberline {2}Methods}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Participants}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Experimental paradigm}{4}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Task}{4}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Feedback}{4}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Eyetracker}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Preprocessing}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Statistical analysis}{4}{subsection.2.5}

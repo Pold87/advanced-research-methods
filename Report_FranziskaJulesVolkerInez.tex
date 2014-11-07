@@ -1,0 +1,114 @@
+\documentclass[a4, 12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{datetime}
+\usepackage{pifont}
+\usepackage[round, sort, numbers]{natbib}
+\usepackage{cite}
+
+\usepackage[toc,page]{appendix}
+\usepackage{listings}
+\usepackage{amsmath}
+
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+\usepackage{color, colortbl}
+
+% Headers & Footers
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\setlength{\headheight}{15.6pt}
+\pagestyle{fancy} % options: empty , plain , fancy
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt} % customise the layout...
+\lhead{\textsc{Radboud University Nijmegen}}\chead{}\rhead{\textsc{Burger, Kruijswijk, Strobel \& Wijnands}}
+\lfoot{}\cfoot{\thepage}\rfoot{\textsc{}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\definecolor{Gray}{gray}{0.8}
+
+% Tikz package includes
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,automata,positioning}	
+
+% Custom caption type
+\DeclareCaptionType{capeq}[][List of equations]
+\captionsetup[capeq]{name=Equation}
+\captionsetup{font=scriptsize}
+
+\lstset	{
+	captionpos=b
+}
+
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+    
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%If we don't use a title page
+%\title{
+%\normalfont \normalsize 
+%\textsc{Advanced Research Methods} \\ [25pt] % Your university, school and/or department name(s)
+%\huge \textbf{Artificial Grammar Learning using Rapid Serial Visual Presentation} \\ % The article title
+%}
+%
+%\author{F. Burger, J. Kruijswijk, V. Strobel, I. Wijnands} % Authors
+%
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+%If we use a title page
+\input{titlepage}
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%Abstract 
+\begin{abstract}
+
+\end{abstract}
+
+%Introduction
+\input{intro} 
+
+%Methods
+%\input{methods}
+
+%Results
+\input{results}
+
+%Discussion
+%\input{discussion}
+
+%Conclusion & Outlook
+%\input{conclusion}
+
+\newpage
+
+
+\bibliographystyle{abbrvnat}
+\bibliography{bibliography}
+
+
+%\input{appendix}
+
+\end{document}
