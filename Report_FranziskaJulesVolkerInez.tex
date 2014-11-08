@@ -8,7 +8,7 @@
 \usepackage{multirow}
 \usepackage{datetime}
 \usepackage{pifont}
-\usepackage[round, sort, numbers]{natbib}
+\usepackage[square, sort, numbers]{natbib}
 \usepackage{cite}
 
 \usepackage[toc,page]{appendix}
@@ -17,17 +17,9 @@
 
 \usepackage[pdftex]{graphicx}
 \usepackage{wrapfig}
-\usepackage[hidelinks]{hyperref}
-\usepackage{tabularx}
+\usepackage{hyperref}
 
 \usepackage{color, colortbl}
-\usepackage{booktabs}
-
-% More space between rows:
-\renewcommand{\arraystretch}{1.1}
-
-% Slightly more space between columns:
-\setlength{\tabcolsep}{8pt}
 
 % Headers & Footers
 \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
@@ -43,7 +35,7 @@
 
 % Tikz package includes
 \usepackage{tikz}
-\usetikzlibrary{shapes,arrows,automata,positioning}	
+\usetikzlibrary{shapes,arrows}	
 
 % Custom caption type
 \DeclareCaptionType{capeq}[][List of equations]
@@ -76,7 +68,7 @@
 %\huge \textbf{Artificial Grammar Learning using Rapid Serial Visual Presentation} \\ % The article title
 %}
 %
-%\author{F. Burger, J. Kruijswijk, V. Strobel, I. Wijnands} % Authors
+%\author{F. Burger, J. Kruijswijk, V. Strobel, I.M. Wijnands} % Authors
 %
 
 \date{\normalsize\today} % Today's date or a custom date
@@ -98,7 +90,7 @@
 \input{intro} 
 
 %Methods
-%\input{methods}
+\input{methods}
 
 %Results
 \input{results}
@@ -112,7 +104,7 @@
 \newpage
 
 
-\bibliographystyle{abbrvnat}
+\bibliographystyle{ieeetr}
 \bibliography{bibliography}
 
 
