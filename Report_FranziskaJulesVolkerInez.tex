@@ -17,9 +17,17 @@
 
 \usepackage[pdftex]{graphicx}
 \usepackage{wrapfig}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 \usepackage{color, colortbl}
+
+\usepackage{booktabs}		
+		
+% More space between rows:		
+\renewcommand{\arraystretch}{1.1}		
+		
+% Slightly more space between columns:		
+\setlength{\tabcolsep}{8pt}
 
 % Headers & Footers
 \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
@@ -35,7 +43,7 @@
 
 % Tikz package includes
 \usepackage{tikz}
-\usetikzlibrary{shapes,arrows}	
+\usetikzlibrary{shapes,arrows,automata,positioning}	
 
 % Custom caption type
 \DeclareCaptionType{capeq}[][List of equations]
